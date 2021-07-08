@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="31.814861">
+    <testcase classname="shopping cart" name="check that you can make a purchase" time="20.313366">
+        <system-out>
+            <![CDATA[Given I launch Chrome browser...............................................passed
+When I open advantage page..................................................passed
+Then I select items tablets.................................................passed
+And I select item tablet HP.................................................passed
+And I add HP Tablet to the shopping cart....................................passed
+And I checkout..............................................................passed
+And I login.................................................................passed
+And I Pay...................................................................passed
+And the item was shopping feel lucky........................................passed
+And the browser close.......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="shopping cart" name="Check that items can be added to the shopping cart" time="11.501495">
+        <system-out>
+            <![CDATA[Given I launch Chrome browser...............................................passed
+When I open advantage page..................................................passed
+Then I select items tablets.................................................passed
+And I select item tablet HP.................................................passed
+And I add HP Tablet to the shopping cart....................................passed
+And the item was added to the shopping cart Im feel lucky...................passed
+And the browser close.......................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

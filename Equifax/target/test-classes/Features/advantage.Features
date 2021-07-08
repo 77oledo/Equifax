@@ -1,0 +1,24 @@
+Feature: shopping cart
+This feature verifies the functionality of shopping cart
+
+Scenario: check that you can make a purchase
+Given I launch Chrome browser
+When I open advantage page
+Then I select items tablets
+And  I select item tablet HP
+And  I add HP Tablet to the shopping cart
+And  I checkout
+And  I login
+And  I Pay
+And the item was shopping feel lucky
+And the browser close
+
+Scenario: Check that items can be added to the shopping cart
+Given I launch Chrome browser
+When I open advantage page
+Then I select items tablets
+And  I select item tablet HP
+And  I add HP Tablet to the shopping cart
+And the item was added to the shopping cart Im feel lucky
+And the browser close
+
