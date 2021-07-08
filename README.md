@@ -1,13 +1,15 @@
 # Equifax
 
 Tecnologias Utilizadas 
-  Selenium
-  Cucumber
-  Gherkins
-  BBD
-  IDE - INTELLIJ IDEA
-  Navegador CHROME version 91.0.4472.124
-  Chrome Driver https://chromedriver.storage.googleapis.com/index.html?path=91.0.4472.101/
+- Selenium
+- Maven
+- Java
+- Cucumber
+- Gherkins
+- BBD
+- IDE - INTELLIJ IDEA
+- Navegador CHROME version 91.0.4472.124
+- Chrome Driver https://chromedriver.storage.googleapis.com/index.html?path=91.0.4472.101/
 
 Para ejecutar, se debe cargar el proyecto en el IDE y cambiar las rutas de:
 - archivo TestRunner.java 
