@@ -3,13 +3,18 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import java.util.concurrent.TimeUnit;
 
 public class advantage  {
     public static WebDriver driver;
     public void launchBrowser() {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Cristian Toledo\\Equifax\\src\\test\\Resources\\Driver\\chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
+        driver = new ChromeDriver(options);
+
     }
 
     public void openURL() {
@@ -65,10 +70,14 @@ public class advantage  {
         driver.findElement(By.name("safepay_username")).clear();
         driver.findElement(By.name("safepay_username")).sendKeys("345776557");
         driver.findElement(By.name("safepay_password")).clear();
-        driver.findElement(By.name("safepay_password")).sendKeys("Qa45");
-        driver.manage().timeouts().implicitlyWait( 30 , TimeUnit.SECONDS);
+        driver.findElement(By.name("safepay_password")).sendKeys("Qa4523");
         driver.findElement(By.id("pay_now_btn_SAFEPAY")).click();
         System.out.println("pago realizado");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         driver.manage().timeouts().implicitlyWait( 5 , TimeUnit.SECONDS);
     }
 
