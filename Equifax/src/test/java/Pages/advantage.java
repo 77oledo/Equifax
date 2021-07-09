@@ -78,7 +78,6 @@ public class advantage  {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.manage().timeouts().implicitlyWait( 5 , TimeUnit.SECONDS);
     }
 
     public void validar_commpra() {
